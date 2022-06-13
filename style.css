@@ -1,0 +1,167 @@
+body{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#77ad9d, rgba(218,249,234,1));
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    background: rgba(255,255,255,.5);
+    border-radius: 20px;
+    width: 60%;
+    height: 36rem;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+#display{
+    width: 70%;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1em ;
+    background: rgba(255,255,255,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+#art {
+    height: 300px;
+    margin-top: 110px;
+}
+
+#list{
+    width: 20%;
+    border-radius: 0 20px;
+    margin-left: 50px;
+    cursor: grab;
+}
+
+#bottom{
+    margin-top: 40px;
+}
+
+#progressBar{
+    margin-top: 50px;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    accent-color: #489da3;
+    cursor: pointer;
+}
+
+#icons{
+    text-align: center;
+    justify-content: center;
+    cursor:grab;
+    padding-top: 1rem;
+}
+
+#bottom{
+    position: absolute;
+    bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: contents;
+}
+
+#header{
+    position: absolute;
+    bottom: 27rem;
+}
+
+#song_name{
+    color: #171717;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#song_artist{
+    color: #b1abab;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.item{
+    padding: 1px;
+}
+
+.item:hover{
+    color:#67b49d;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+@media all and (min-width:320px) and (max-width:2400px){
+    body{
+        height: 150rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#77ad9d, rgba(218,249,234,1));
+    }
+    #container{
+    display: flex;
+    width: 121%;
+    height: 43rem;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    border-radius: 20px;
+    background: rgba(255,255,255,.5);
+    border-bottom-left-radius: 3rem;
+    border-top-left-radius: 3rem ;
+    }
+    #display{
+    width: 60rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom-left-radius: 3rem;
+    border-top-left-radius: 3em ;
+    }
+    #art{
+        height: 222px;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    #song_name{
+        font-size: 35px;
+    }
+    #song_artist {
+        font-size: 2rem;
+    }
+    #list{
+        font-size: 15.5px;
+        width: 55%;
+        margin-left: 25px;
+    }
+    #progressBar{
+        width: 17rem;
+        top: 32.5rem;
+    }
+    #header{
+        bottom: 32rem;
+        text-align: center;
+    }
+    #icons{
+        bottom: 5rem;
+        left: 6.3rem;
+    }
+    #bottom{
+        text-align: center;
+        position: absolute;
+        bottom: 4rem;
+    }
+}
